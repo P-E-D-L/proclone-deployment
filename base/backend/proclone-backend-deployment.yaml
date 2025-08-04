@@ -14,7 +14,7 @@ spec:
         spec:
             containers:
                 - name: proclone-backend
-                  image: valorouskarma/proclone:latest
+                  image: ghcr.io/cpp-cyber/proclone:latest
                   imagePullPolicy: Always
                   ports:
                       - containerPort: 8080
@@ -25,7 +25,7 @@ spec:
                       - name: REDIS_PASSWORD
                         value: ""
                       - name: STORAGE_ID
-                        value: [your shared storage ID] # Edit this
+                        value: "[your shared storage ID]" 
                       - name: LDAP_SERVER
                         valueFrom:
                             secretKeyRef:
